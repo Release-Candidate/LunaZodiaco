@@ -1,4 +1,13 @@
-﻿namespace LunaZodiaco.Android
+﻿// SPDX-License-Identifier: MIT
+// Copyright 2018 Fabulous contributors.
+// Copyright 2021 Roland Csaszar
+//
+// Project:  LunaZodiaco.Android
+// File:     AssemblyInfo.fs
+//
+//==============================================================================
+
+namespace LunaZodiaco.Android
 
 open System.Reflection
 open System.Runtime.CompilerServices

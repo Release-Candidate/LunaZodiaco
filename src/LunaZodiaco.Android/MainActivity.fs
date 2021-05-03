@@ -1,4 +1,12 @@
-﻿// Copyright 2018 Fabulous contributors. See LICENSE.md for license.
+﻿// SPDX-License-Identifier: MIT
+// Copyright 2018 Fabulous contributors.
+// Copyright 2021 Roland Csaszar
+//
+// Project:  LunaZodiaco.Android
+// File:     MainActivity.fs
+//
+//==============================================================================
+
 namespace LunaZodiaco.Android
 
 open System
