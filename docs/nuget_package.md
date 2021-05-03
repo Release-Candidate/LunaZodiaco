@@ -1,1 +1,1 @@
-# Fabulous-TEMPLATE NuGet Package
+# LunaZodiaco NuGet Package

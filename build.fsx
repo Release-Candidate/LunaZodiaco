@@ -39,7 +39,7 @@ let coverageFile = Path.combine testOutAbs "coverage.xml" // absolute path to co
 
 // projects to build, this should be all projects ...
 let buildProjs =
-    !! "src/Fabulous-TEMPLATE/*.*proj" ++ "tests/**/*.*proj"
+    !! "src/LunaZodiaco/*.*proj" ++ "tests/**/*.*proj"
 
 // projects to test / test projects in `tests`, not the ones in `src`
 let testProjs = !! "tests/**/*.*proj"
@@ -48,7 +48,7 @@ let testProjs = !! "tests/**/*.*proj"
 let coverageProjs = testProjs
 
 // projects to generate Nuget packages of
-let packageProjs = !! "src/Fabulous-TEMPLATE/*.*proj"
+let packageProjs = !! "src/LunaZodiaco/*.*proj"
 
 // projects to publish (`dotnet publish`)
 let publishProjs = !! "tests/**/*.*proj"

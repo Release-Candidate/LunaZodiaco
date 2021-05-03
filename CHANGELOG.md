@@ -1,4 +1,4 @@
-# Fabulous-TEMPLATE Changelog
+# LunaZodiaco Changelog
 
 ## Version 0.9.1 (2021-04-23)
 
