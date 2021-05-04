@@ -53,7 +53,7 @@ module Zodiac=
         (120.<deg>, 150.<deg>)
         (150.<deg>, 180.<deg>)
         (180.<deg>, 210.<deg>)
-        (210.<deg>, 230.<deg>)
+        (210.<deg>, 240.<deg>)
         (240.<deg>, 270.<deg>)
         (270.<deg>, 300.<deg>)
         (300.<deg>, 330.<deg>)

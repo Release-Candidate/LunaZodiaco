@@ -10,7 +10,6 @@ namespace TestLunaZodiaco
 
 open Expecto
 open Swensen.Unquote
-open System
 open FsCheck
 open Expecto.Logging
 
