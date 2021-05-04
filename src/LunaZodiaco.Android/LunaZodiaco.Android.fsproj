@@ -22,9 +22,9 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <SelectedDevice>Pixel_3a_API_30_x86</SelectedDevice>
-    <ActiveDebugProfile>Pixel_3a_API_30_x86</ActiveDebugProfile>
-    <DefaultDevice>Pixel_3a_API_30_x86</DefaultDevice>
+    <SelectedDevice>pixel_2_nougat_7_0_-_api_24</SelectedDevice>
+    <ActiveDebugProfile>pixel_2_nougat_7_0_-_api_24</ActiveDebugProfile>
+    <DefaultDevice>pixel_2_nougat_7_0_-_api_24</DefaultDevice>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

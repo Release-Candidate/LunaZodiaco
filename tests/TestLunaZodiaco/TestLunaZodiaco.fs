@@ -2,8 +2,8 @@
 // Copyright (C) 2021 Roland Csaszar
 //
 // Project:  TestLunaZodiaco
-// File:     Generic.fs
-// Date:     4/24/2021 1:11:17 PM
+// File:     TestLunaZodiaco.fs
+//
 //==============================================================================
 
 
@@ -15,9 +15,10 @@ open System
 open FsCheck
 open Expecto.Logging
 
+open RC.Moon
 
 [<AutoOpen>]
-module Generic=
+module TestLunaZodiaco=
 
     let private logger = Log.create "LunaZodiaco"
 
@@ -46,3 +47,19 @@ module Generic=
     let configFasterThan = { FsCheckConfig.defaultConfig with
                                     maxTest = 100
                                     endSize = 1000000 }
+
+    // Tests ===================================================================
+    [<Tests>]
+    let tests =
+      testList
+        "LunaZodiaco"
+         [
+           testList
+            "Reference Dates"
+            [ // Test the wavelengths of all waves ==============================================
+
+             testCase "moon phase and zodiac compared"
+             <| fun () ->  test <@ true @>
+            ]
+
+        ]
