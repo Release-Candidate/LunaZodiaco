@@ -21,6 +21,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
+    <Compile Include="Generics.fs" />
+    <Compile Include="TestZodiac.fs" />
+    <Compile Include="TestMoonPhase.fs" />
     <Compile Include="TestLunaZodiaco.fs" />
     <Compile Include="TestMain.fs" />
   </ItemGroup>

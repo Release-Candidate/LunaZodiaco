@@ -39,8 +39,11 @@
     <Description>LunaZodiaco is a F# library to calculate moon phases and the zodiac sign of the moon for a given day. So, it calculates the ecliptic longitude at a reasonable accuracy.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="paket.references" />
+    <Compile Include="Generics.fs" />
+    <Compile Include="MoonPhase.fs" />
+    <Compile Include="Zodiac.fs" />
     <Compile Include="LunaZodiaco.fs" />
+    <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="5.0.1" />

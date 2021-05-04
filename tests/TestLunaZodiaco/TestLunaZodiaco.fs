@@ -20,34 +20,6 @@ open RC.Moon
 [<AutoOpen>]
 module TestLunaZodiaco=
 
-    let private logger = Log.create "LunaZodiaco"
-
-    let private loggerFunc logFunc moduleName name no args =
-         logFunc (
-            Message.eventX "{module} '{test}' #{no}, generated '{args}'"
-            >> Message.setField "module" moduleName
-            >> Message.setField "test" name
-            >> Message.setField "no" no
-            >> Message.setField "args" args )
-
-    let loggerFuncDeb moduleName name no args =
-        loggerFunc logger.debugWithBP moduleName name no args
-
-    let loggerFuncInfo moduleName name no args =
-        loggerFunc logger.infoWithBP moduleName name no args
-
-    let config = { FsCheckConfig.defaultConfig with
-                        maxTest = 10000
-                        endSize = 1000000 }
-
-    let configList = { FsCheckConfig.defaultConfig with
-                            maxTest = 15
-                            endSize = 500 }
-
-    let configFasterThan = { FsCheckConfig.defaultConfig with
-                                    maxTest = 100
-                                    endSize = 1000000 }
-
     // Tests ===================================================================
     [<Tests>]
     let tests =
@@ -55,11 +27,19 @@ module TestLunaZodiaco=
         "LunaZodiaco"
          [
            testList
-            "Reference Dates"
-            [ // Test the wavelengths of all waves ==============================================
+            "Conversion functions"
+            [ // Test conversion functions =====================================
 
-             testCase "moon phase and zodiac compared"
-             <| fun () ->  test <@ true @>
+             testPropertyWithConfig config "toStrings"
+             <| fun i j ->
+                    let moonPhase = getMoonPhase <| TestMoonPhase.sanitizeInt i
+                    let zodiac = getZodiac <| TestZodiac.sanitizeInt j
+                    let moonDay = { LunaZodiaco.MoonDay.Phase = moonPhase
+                                    LunaZodiaco.MoonDay.Zodiac = zodiac }
+                    test <@ moonDay.ToStrings () = LunaZodiaco.toStrings moonDay @>
+                    let phaseStr, zodiacStr = LunaZodiaco.toStrings moonDay
+                    test <@ phaseStr = MoonPhase.toString moonDay.Phase @>
+                    test <@ zodiacStr = Zodiac.toString moonDay.Zodiac @>
             ]
 
         ]
