@@ -56,6 +56,10 @@ module TestMoonPhase=
                 <| fun i ->
                     Generics.testFromToInt getMoonPhase MoonPhase.fromInt (sanitizeInt i)
 
+                testCase "let FromInt fail"
+                <| fun () ->
+                    test <@ MoonPhase.fromInt 65 = None @>
+
                 testPropertyWithConfig config "FromAngle"
                 <| fun i ->
                     Generics.testFromAngle getMoonPhase MoonPhase.fromAngle (sanitizeInt i)

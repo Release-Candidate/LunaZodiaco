@@ -56,6 +56,10 @@ module TestZodiac=
                 <| fun i ->
                     Generics.testFromToInt getZodiac Zodiac.fromInt (sanitizeInt i)
 
+                testCase "let FromInt fail"
+                <| fun () ->
+                    test <@ Zodiac.fromInt 65 = None @>
+
                 testPropertyWithConfig config "FromAngle"
                 <| fun i ->
                     Generics.testFromAngle getZodiac Zodiac.fromAngle (sanitizeInt i)
