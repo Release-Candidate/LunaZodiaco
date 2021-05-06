@@ -23,7 +23,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>LunaZodiaco</PackageId>
     <PackageLicenseFile></PackageLicenseFile>
-    <PackageProjectUrl>https://lunazodiaco.readthedocs.io/en/latest/nuget_package/</PackageProjectUrl>
+    <PackageProjectUrl>https://lunazodiaco.readthedocs.io/en/latest/</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>es</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -36,7 +36,8 @@
     <PackageIcon>nuget_icon.png</PackageIcon>
     <PackageTags>LunaZodiaco</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Description>LunaZodiaco is a F# library to calculate moon phases and the zodiac sign of the moon for a given day. So, it calculates the ecliptic longitude at a reasonable accuracy.</Description>
+    <Description>LunaZodiaco is a F# library to calculate moon phases and the zodiac sign of the moon for a given day. It calculates the ecliptic longitude at a reasonable accuracy. The moon phase is calculated using Conways method, which works in the 20th and 21st century and is accurate to about 1 day.
+Don't use both calculations for astronomical calculations where accuracy is needed, but it's good enough for a calendar.</Description>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Generics.fs" />
