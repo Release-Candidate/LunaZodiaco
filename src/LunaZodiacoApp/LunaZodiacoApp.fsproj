@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <UserSecretsId>60a70da7-d491-433f-bdb6-df8e385819bc</UserSecretsId>
+    <Configurations>Debug;Release;APK Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
