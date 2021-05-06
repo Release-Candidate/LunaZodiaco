@@ -3,7 +3,7 @@
 //
 // Project:  LunaZodiacoApp
 // File:     Update.fs
-// Date:     4/22/2021 12:00:09 PM
+//
 //==============================================================================
 
 /// The namespace of the IOS and Android LunaZodiaco app.

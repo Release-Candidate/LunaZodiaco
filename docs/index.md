@@ -1,8 +1,11 @@
-#![LunaZodiaco Logo](./images/nuget_icon.png) LunaZodiaco
+# ![LunaZodiaco Logo](./images/nuget_icon.png) LunaZodiaco
 
-This cross platform - Linux, Mac OS X and Windows - F# .Net library and program converts Maya Tzolk’in dates to Gregorian dates and vice versa.
+This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app calculates and shows the moon phase and the moon's zodiac at any date between the 1st of January 1900 and the 31st of December, 2099.
 
 If you want to know more about the Maya calendar systems, see [Links](#links).
+
+![Smartphone app screenshot 1](./images/Screenshot_1620313565.png)
+![Smartphone app screenshot 2](./images/Screenshot_1620313577.png)
 
 Information about the smartphone app is at [Usage of the Smartphone App](./usage.md)
 
@@ -14,13 +17,3 @@ filing bug reports or feature requests, to contributing source code, to adding d
 or translations or any other way you can help LunaZodiaco.
 
 ## Links
-
-Smithsonian Museo Nacional del Indígena Americano: [Viviendo El Tiempo Maya](https://maya.nmai.si.edu/es)
-
-Website of the Smithsonian National Museum of the American Indian on Mayas [Living Maya Time](https://maya.nmai.si.edu/).
-
-Online general Maya (not only Tzolk’in) calendar converter: [Maya Converter of the Smithsonian NMAI](https://maya.nmai.si.edu/calendar/maya-calendar-converter)
-
-[Convertidor Al Calendario Maya Smithsonian NMIA](https://maya.nmai.si.edu/es/calendario/convertidor-de-calendario-maya)
-
-Mayan Glyphs and Unicode: [Roadmap to the SMP](https://www.unicode.org/roadmaps/smp/) and the PDF [Updated List of Characters for Mayan Codices](https://www.unicode.org/L2/L2020/20248-mayan-update.pdf)

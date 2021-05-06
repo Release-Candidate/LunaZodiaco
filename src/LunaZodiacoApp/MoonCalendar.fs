@@ -2,8 +2,8 @@
 // Copyright (C) 2021 Roland Csaszar
 //
 // Project:  LunaZodiacoApp
-// File:     NineWavePage.fs
-// Date:     4/29/2021 8:40:08 PM
+// File:     MoonCalendar.fs
+//
 //==============================================================================
 /// The namespace of the IOS and Android LunaZodiaco app.
 namespace LunaZodiacoApp

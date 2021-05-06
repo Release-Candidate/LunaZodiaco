@@ -3,7 +3,7 @@
 //
 // Project:  LunaZodiacoApp
 // File:     View.fs
-// Date:     4/10/2021 9:03:21 PM
+//
 //==============================================================================
 
 /// The namespace of the IOS and Android Tzolkin app.
