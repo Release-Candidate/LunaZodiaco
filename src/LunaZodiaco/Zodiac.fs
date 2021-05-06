@@ -39,7 +39,7 @@ module Zodiac=
         "Libra"
         "Escorpio"
         "Sagitario"
-        "Capricornio2"
+        "Capricornio"
         "Acuario"
         "Piscis" |]
 

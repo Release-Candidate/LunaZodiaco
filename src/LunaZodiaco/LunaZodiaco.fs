@@ -170,6 +170,7 @@ module LunaZodiaco=
 
     /// Conway's formula for the moon age (number of days after new moon).
     /// Only works for dates in the 20th and 21st century!
+    /// Exact to about +/- a day.
     ///
     /// Params:
     ///         `date` The day to calculate the moon phase of.
