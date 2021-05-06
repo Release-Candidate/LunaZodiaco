@@ -37,8 +37,8 @@ module TestLunaZodiaco=
         (DateTime (2021, 5, 26), { LunaZodiaco.MoonDay.Phase =  MoonPhase.FullMoon
                                    LunaZodiaco.MoonDay.Zodiac = Zodiac.Scorpius } )
 
-        (DateTime (2021, 6, 20), { LunaZodiaco.MoonDay.Phase =  MoonPhase.WaningGibbous
-                                   LunaZodiaco.MoonDay.Zodiac = Zodiac.Libra } )
+        (DateTime (2021, 6, 27), { LunaZodiaco.MoonDay.Phase =  MoonPhase.WaningGibbous
+                                   LunaZodiaco.MoonDay.Zodiac = Zodiac.Aquarius } )
 
         (DateTime (2021, 5, 4), { LunaZodiaco.MoonDay.Phase =  MoonPhase.LastQuarter
                                   LunaZodiaco.MoonDay.Zodiac = Zodiac.Aquarius } )
@@ -50,6 +50,9 @@ module TestLunaZodiaco=
                                    LunaZodiaco.MoonDay.Zodiac = Zodiac.Leo } )
 
         (DateTime (2021, 6, 24), { LunaZodiaco.MoonDay.Phase =  MoonPhase.FullMoon
+                                   LunaZodiaco.MoonDay.Zodiac = Zodiac.Sagittarius } )
+
+        (DateTime (2021, 6, 23), { LunaZodiaco.MoonDay.Phase =  MoonPhase.WaxingGibbous
                                    LunaZodiaco.MoonDay.Zodiac = Zodiac.Sagittarius } )
         ]
 
@@ -107,6 +110,6 @@ module TestLunaZodiaco=
                 referenceDates
                 |> List.iter (fun (date, moonDay) ->
                         let result = LunaZodiaco.getMoonDay date
-                        test <@ result.Zodiac = moonDay.Zodiac @> )
+                        test <@ result = moonDay @> )
             ]
         ]
