@@ -1,3 +1,6 @@
+> [!WARNING]
+> This reporitors has been moved to [Codeberg: LunaZodiaco](https://codeberg.org/Release-Candidate/LunaZodiaco)
+
 # ![LunaZodiaco Icon](./src/LunaZodiaco.Android/Resources/mipmap-mdpi/icon.png) LunaZodiaco <!-- omit in toc -->
 
 This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app calculates and shows the moon phase and the moon's zodiac at any date between the 1st of January 1900 and the 31st of December, 2099.
