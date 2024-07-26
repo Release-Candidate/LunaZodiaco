@@ -1,5 +1,5 @@
 > [!WARNING]
-> This reporitors has been moved to [Codeberg: LunaZodiaco](https://codeberg.org/Release-Candidate/LunaZodiaco)
+> This repository has been moved to [Codeberg: LunaZodiaco](https://codeberg.org/Release-Candidate/LunaZodiaco)
 
 # ![LunaZodiaco Icon](./src/LunaZodiaco.Android/Resources/mipmap-mdpi/icon.png) LunaZodiaco <!-- omit in toc -->
 
